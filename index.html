@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WoahAlex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+    <h1 class="title">click anywhere to scroll.</h1>
+
+    <div class='secret' onclick="plusDivs(+1)"></div>
+    <img class="back" src="img/twitter.png">
+    <img class="back" src="img/youtube.png">
+    <img class="back" src="img/twitch.png">
+    <img class="back" src="img/discord.png">
+    <img class="back" src="img/minecraft.png">
+
+    <img class="center" src="img/crt.png" onclick="openHandler()">
+
+    <h1 class="title">click anywhere to change the channel.</h1>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function openHandler() {
+            switch (slideIndex) {
+                case 1:
+                    window.open("https://www.twitter.com/ImWoahAlex");
+                    break;
+                case 2:
+                    window.open("https://www.youtube.com/c/WoahAlex");
+                    break;
+                case 3:
+                    window.open("https://www.twitch.tv/ImWoahAlex");
+                    break;
+                case 4:
+                    window.open("https://discord.gg/jcN6WmBgkv");
+                    break;
+                case 5:
+                    window.open("https://store.woahmc.com");
+                    break;
+            }
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("back");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-image: url(img/bg.png);
+    overflow: auto;
+   
+     }
+
+     @import url(//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft);
+
+   .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px; /* Half the height */
+    margin-left: -250px; /* Half the width */
+  }
+
+  .back{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 426px;
+    height: 338px;
+    margin-top: -220px; /* Half the height */
+    margin-left: -213px; /* Half the width */
+  
+
+  }
+
+  .secret{
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .title{
+    color: white;
+    text-align: center;
+    font-family: Minecraft;
+  }
